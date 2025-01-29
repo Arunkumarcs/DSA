@@ -1,7 +1,6 @@
 import {
   binarySearchIterative,
   linearSearch,
-  binarySearchRecursive,
   naiveStringSearch,
   jumpSearch,
   interpolationSearch,
@@ -9,6 +8,7 @@ import {
   fibonacciSearch,
   ternarySearch,
   sublistSearch,
+  binarySearchRecursive,
 } from "./search";
 
 describe("Search Functions", () => {
