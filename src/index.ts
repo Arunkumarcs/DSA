@@ -1,1 +1,2 @@
-console.log("Hello, TypeScript!");
+export * from "./search";
+export * from "./sort";
