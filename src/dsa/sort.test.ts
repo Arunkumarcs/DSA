@@ -7,7 +7,7 @@ import {
   heapSort,
   radixSort,
   bucketSort,
-} from "./sort";
+} from "../sort";
 
 describe("Bubble Sort", () => {
   const testCases = [
