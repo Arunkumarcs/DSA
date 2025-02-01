@@ -58,11 +58,3 @@ function makeRowZero(arr, i) {
     arr[i][j] = 0;
   }
 }
-
-console.log(
-  zeroMatrix([
-    [1, 2, 3],
-    [4, 0, 6],
-    [7, 8, 9],
-  ])
-);

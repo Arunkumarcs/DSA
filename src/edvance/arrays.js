@@ -18,7 +18,7 @@
 // 1. Totation an array n number of times
 // ex: [1,2,3,4,5] n=2
 // output: [4,5,1,2,3]
-export function rotateArray(arr: number[], n: number): number[] {
+function rotateArray(arr, n) {
   const len = arr.length;
   const rotations = n % len;
 
@@ -27,7 +27,7 @@ export function rotateArray(arr: number[], n: number): number[] {
   }
 
   for (let i = 0; i < rotations; i++) {
-    arr.unshift(arr.pop() as number);
+    arr.unshift(arr.pop());
   }
   return arr;
 }
@@ -37,7 +37,7 @@ export function rotateArray(arr: number[], n: number): number[] {
 // Input: [1, 2, 3, 4, 5], target = 9
 // Output: [2, 3, 4]
 // Three sum problem solution
-export function findThreeSum(arr: number[], target: number): number[] | number {
+function findThreeSum(arr, target) {
   if (arr.length < 3) {
     return -1;
   }
@@ -57,3 +57,4 @@ export function findThreeSum(arr: number[], target: number): number[] | number {
   return -1;
 }
 
+module.exports = { rotateArray, findThreeSum };
