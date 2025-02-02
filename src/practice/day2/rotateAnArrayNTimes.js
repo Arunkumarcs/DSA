@@ -12,12 +12,17 @@ const rotateArray = {
     }
   },
 
-  init(arr, n) {
+  init(arr, n, direction = "right") {
     let newRotaion = arr.length > n ? n : n % arr.length;
 
     this.reverse(arr, 0, arr.length - 1);
-    this.reverse(arr, 0, newRotaion - 1);
-    this.reverse(arr, newRotaion, arr.length - 1);
+    if (direction === "right") {
+      this.reverse(arr, 0, newRotaion - 1);
+      this.reverse(arr, newRotaion, arr.length - 1);
+    } else {
+      this.reverse(arr, arr.length - newRotaion, arr.length - 1);
+      this.reverse(arr, 0, arr.length - newRotaion - 1);
+    }
     return arr;
   },
 };
