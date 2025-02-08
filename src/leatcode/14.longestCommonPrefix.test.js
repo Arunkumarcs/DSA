@@ -1,4 +1,4 @@
-const { longestCommonPrefix } = require("./longestCommonPrefix");
+const { longestCommonPrefix } = require("./14.longestCommonPrefix");
 
 describe("Longest Common Prefix", () => {
   test("should find common prefix in array of similar strings", () => {

@@ -1,4 +1,4 @@
-const { romanToInteger } = require("./romanToInteger");
+const { romanToInteger } = require("./13.romanToInteger");
 
 describe("Roman to Integer", () => {
   test("should convert basic roman numerals correctly", () => {

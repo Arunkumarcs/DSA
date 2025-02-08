@@ -29,7 +29,7 @@ const longestCommonPrefix = (strs) => {
   let prefix = strs[minLengthIndex];
 
   for (let i = 0; i < strs.length; i++) {
-    if (minLengthIndex == i) { 
+    if (minLengthIndex == i) {
       continue;
     }
     while (strs[i].indexOf(prefix) !== 0) {

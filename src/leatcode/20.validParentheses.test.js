@@ -1,4 +1,4 @@
-const { isValid } = require("./validParentheses");
+const { isValid } = require("./20.validParentheses");
 
 describe("Valid Parentheses", () => {
   test("should validate simple matching parentheses", () => {
