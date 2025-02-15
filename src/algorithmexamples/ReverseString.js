@@ -15,3 +15,5 @@ const reverseString = (str) => {
 
   return strArray.join(" ");
 };
+
+module.exports = reverseString;
