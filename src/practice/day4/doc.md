@@ -1,4 +1,0 @@
-## Datatypes
-- string
-- array
-- 
