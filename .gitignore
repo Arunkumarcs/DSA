@@ -1,6 +1,6 @@
 node_modules
 dist
 .envS
-coverage
+coverage/*
 allure-results
 allure-report
