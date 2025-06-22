@@ -1,8 +1,6 @@
 export function hasDuplicate(nums: number[]): boolean {
   let map = new Map();
 
-  debugger;
-
   for (const element of nums) {
     if (map.has(element)) {
       return true;
